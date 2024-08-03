@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: "Neonoir W01 Bold";
+	src: url("https://db.onlinewebfonts.com/t/6b9c1e37571068a60da4af717918a836.eot");
+	src:
+		url("https://db.onlinewebfonts.com/t/6b9c1e37571068a60da4af717918a836.eot?#iefix")
+			format("embedded-opentype"),
+		url("https://db.onlinewebfonts.com/t/6b9c1e37571068a60da4af717918a836.woff2") format("woff2"),
+		url("https://db.onlinewebfonts.com/t/6b9c1e37571068a60da4af717918a836.woff") format("woff"),
+		url("https://db.onlinewebfonts.com/t/6b9c1e37571068a60da4af717918a836.ttf") format("truetype"),
+		url("https://db.onlinewebfonts.com/t/6b9c1e37571068a60da4af717918a836.svg#Neonoir W01 Bold")
+			format("svg");
+}
+
+@font-face {
+	font-family: "ostrich_sansblack";
+	src:
+		url("./assets/fonts/OstrichSans/ostrichsans-black-webfont.woff2") format("woff2"),
+		url("./assets/fonts/OstrichSans/ostrichsans-black-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ostrich_sansmedium";
+	src:
+		url("./assets/fonts/OstrichSans/ostrichsans-medium-webfont.woff2") format("woff2"),
+		url("./assets/fonts/OstrichSans/ostrichsans-medium-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
