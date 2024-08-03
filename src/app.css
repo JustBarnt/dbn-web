@@ -22,6 +22,10 @@
   .header-lg-styles {
     @apply lg:flex-row lg:justify-between lg:items-center;
   }
+
+  .footer-lg-styles {
+    @apply lg:grid lg:grid-cols-[auto_auto_auto];
+  }
 }
 
 @font-face {
