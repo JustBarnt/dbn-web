@@ -1,6 +1,6 @@
 import { skeleton } from "@skeletonlabs/tw-plugin";
 import { join } from "path";
-import DBN_THEME from "./theme.js";
+import { nature } from "./theme";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -12,14 +12,16 @@ export default {
 		extend: {
 			fontFamily: {
 				ostrich_black: ["ostrich_sansblack", "sans-serif"],
-				ostrich_med: ["ostrich_sansblack", "sans-serif"],
+				ostrich_med: ["ostrich_sansmedium", "sans-serif"],
 				neonoir: ["Neonoir\\ W01\\ Bold", "sans-serif"]
 			}
 		}
 	},
 	plugins: [
 		skeleton({
-			themes: [DBN_THEME]
+			themes: {
+				custom: [nature]
+			}
 		})
 	]
 };
