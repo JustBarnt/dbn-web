@@ -2,6 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  button {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 1.25rem /* 16px */;
+    line-height: 1.75rem /* 24px */;
+    border-radius: 999px;
+
+    --tw-shadow-color: rgb(var(--color-tertiary-700) / 0.3);
+    --tw-shadow: var(--tw-shadow-colored);
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+    --tw-bg-opacity: 1;
+    background-color: rgb(var(--color-primary-500) / var(--tw-bg-opacity));
+
+    hover: {
+      --tw-bg-opacity: 1;
+      background-color: rgb(var(--color-tertiary-500) / var(--tw-bg-opacity));
+    }
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    --tw-border-opacity: 1;
+    border-color: rgb(var(--color-tertiary-500) / var(--tw-border-opacity));
+    border-width: 3px;
+    background-color: "#ffffff";
+  }
+}
+
 @layer utilities {
   ul.dbn-ul-list {
     display: flex;
@@ -26,6 +61,34 @@
   .footer-lg-styles {
     @apply lg:grid lg:grid-cols-[auto_auto_auto];
   }
+}
+
+@keyframes color-change {
+  0% {
+    @apply bg-primary-500;
+  }
+
+  100% {
+    @apply bg-tertiary-500;
+  }
+}
+
+@keyframes color-leave {
+  0% {
+    @apply bg-tertiary-500;
+  }
+
+  100% {
+    @apply bg-primary-500;
+  }
+}
+
+button:hover {
+  animation: color-change 0.25s ease-in-out forwards;
+}
+
+button:not(hover) {
+  animation: color-leave 0.25s ease-in-out forwards;
 }
 
 @font-face {
