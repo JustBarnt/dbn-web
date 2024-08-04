@@ -3,8 +3,8 @@
   export let width = "56px";
 </script>
 
-<a class="hover:[&>svg>path]:fill-tertiary-500" href="https://www.facebook.com/profile.php?id=61561320924750&mibextid=LQQJ4d">
-  <svg xmlns="http://www.w3.org/2000/svg" {width} viewBox="0 0 512 512">
+<a class="group hover:[&>svg>path]:fill-tertiary-500" href="https://www.facebook.com/profile.php?id=61561320924750&mibextid=LQQJ4d">
+  <svg class="group-hover:[&>path]:fill-tertiary-500" xmlns="http://www.w3.org/2000/svg" {width} viewBox="0 0 512 512">
     <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
     <path
       {fill}

@@ -12,7 +12,7 @@
       CONTACT US TO SCHEDULE A CONSULTATION!
     </h2>
   </div>
-  <div class="flex flex-row gap-8" data-name="contact-el">
+  <div class="flex flex-row gap-8 items-center" data-name="contact-el">
     <div data-name="map-el">
       <!-- TODO: UPDATE API KEY WITH SAMI'S WEB URL -->
       <iframe
@@ -26,7 +26,7 @@
       <div class="flex justify-center items-center gap-8">
         <Facebook width="32" />
         <Messenger width="32" />
-        <Instagram width="32" />
+        <Instagram width="28" />
       </div>
     </div>
     <div data-name="form-el"></div>
