@@ -20,6 +20,7 @@
     </div>
   </div>
   <div
+    id="contact-us-form"
     class="w-full h-full p-4"
     data-name="form-el">
     <!-- TODO: CHANGE EMAIL TO SAMIS EMAIL -->
