@@ -41,7 +41,7 @@
 </script>
 
 <img
-  class="self-center"
+  class="self-center banner-img"
   width="100%"
   src={active_banner.source}
   alt={active_banner.alt}

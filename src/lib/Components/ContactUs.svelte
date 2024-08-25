@@ -4,7 +4,9 @@
   import Messenger from "$lib/icons/messenger.svelte";
 </script>
 
-<main class="flex flex-col items-center py-4">
+<section
+  id="Contact-Us"
+  class="flex flex-col items-center py-4">
   <div
     class="space-y-4"
     data-name="hero-el">
@@ -63,4 +65,4 @@
         class="self-center text-on-primary-token font-ostrich_black">Send</button>
     </form>
   </div>
-</main>
+</section>

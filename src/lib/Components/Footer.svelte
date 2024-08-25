@@ -5,7 +5,7 @@
   import { Footer_Items } from "./Data/footer";
 </script>
 
-<main class="flex flex-col">
+<footer class="flex flex-col">
   <slot name="map" />
   <div
     class="flex justify-center items-center font-neonoir text-2xl bg-primary-500 align-middle mx-auto w-full p-2 gap-x-4"
@@ -26,4 +26,4 @@
       </div>
     {/each}
   </div>
-</main>
+</footer>

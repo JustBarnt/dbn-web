@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  button {
+  button,
+  a.btn-link {
     padding-left: 4rem;
     padding-right: 4rem;
     padding-top: 9px;
@@ -11,6 +12,8 @@
     font-size: 1.25rem /* 16px */;
     line-height: 1.75rem /* 24px */;
     border-radius: 999px;
+    @apply font-ostrich_black;
+    @apply text-white;
 
     --tw-shadow-color: rgb(var(--color-tertiary-700) / 0.3);
     --tw-shadow: var(--tw-shadow-colored);
@@ -65,32 +68,8 @@
   }
 }
 
-@keyframes color-change {
-  0% {
-    @apply bg-primary-500;
-  }
-
-  100% {
-    @apply bg-tertiary-500;
-  }
-}
-
-@keyframes color-leave {
-  0% {
-    @apply bg-tertiary-500;
-  }
-
-  100% {
-    @apply bg-primary-500;
-  }
-}
-
-button:hover {
-  animation: color-change 0.25s ease-in-out forwards;
-}
-
-button:not(hover) {
-  animation: color-leave 0.25s ease-in-out forwards;
+html {
+  scroll-behavior: smooth;
 }
 
 @font-face {

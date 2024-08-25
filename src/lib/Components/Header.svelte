@@ -47,7 +47,7 @@
   }
 </script>
 
-<main class="flex header-lg-styles flex-col gap-y-8 sticky top-0 z-10 bg-surface-50/80 backdrop-blur-sm p-4 border-b-primary-500 border-b-8">
+<header class="flex header-lg-styles flex-col gap-y-8 sticky top-0 z-10 bg-surface-50/80 backdrop-blur-sm p-4 border-b-primary-500 border-b-8">
   <img
     class="self-center"
     width="280px"
@@ -73,4 +73,4 @@
       href="#contact-us-form">Contact Us</a>
     <p class="font-ostrich_black text-secondary-500 text-2xl whitespace-nowrap">937-272-7697</p>
   </div>
-</main>
+</header>
