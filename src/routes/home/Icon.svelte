@@ -8,7 +8,7 @@
 
   /** @type {IconKeys} */
   export let icon = "off_leash_training";
-  export let width = "106px";
+  export let width = "100%";
 
   /** @type {Icons} */
   const icons = {
@@ -50,6 +50,7 @@
 
 <img
   {width}
+  height="100%"
   src={selected_icon.source}
   alt={selected_icon.alt}
   data-name={selected_icon.name} />

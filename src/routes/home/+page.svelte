@@ -104,20 +104,20 @@
 
 <main
   id="Home-Page"
-  class="flex flex-col content">
+  class="flex flex-col content w-full">
   <Banner />
   <section
     id="Training-Details"
-    class="w-full px-16 flex flex-col gap-8 bg-white p-8">
+    class="w-full lg:px-16 lg:py-8 p-8 flex flex-col gap-8 bg-white">
     <h1 class="font-ostrich_med text-5xl text-center">{heros[0]}</h1>
     <section
       id="Training-Details-Grid"
-      class="grid grid-cols-2">
+      class="grid lg:grid-cols-2 md:grid-rows-2 md:grid-cols-1">
       {#each Object.keys(home_contents) as key}
         {@const page_key = assertPageKeys(key)}
         {#if home_contents[page_key]}
-          <article class="flex p-4 gap-2 {order_cols(page_key)}">
-            <span class="w-1/3">
+          <article class="w-full flex p-4 gap-2 {order_cols(page_key)}">
+            <span class="min-w-16 max-w-[106px] lg:place-self-start place-self-center">
               <Icon icon={icon_map(key)} />
             </span>
             <div class="flex flex-col home-help">
@@ -140,7 +140,7 @@
   </section>
   <section
     id="Certifications"
-    class="flex bg-primary-500 items-center justify-center px-16 py-4">
+    class="flex bg-primary-500 items-center justify-center lg:px-16 py-4">
     <img
       width="80%"
       src={home_certifications}
@@ -148,14 +148,14 @@
   </section>
   <section
     id="Our-Classes"
-    class="flex flex-col px-16 gap-8 py-8">
-    <div class="px-40 space-y-2">
+    class="flex flex-col lg:px-16 lg:py-8 p-8 gap-8">
+    <div class="lg:px-40 space-y-2">
       <h1 class="font-ostrich_med text-5xl text-center">Our Classes</h1>
       {#if class_contents["OUR CLASSES"]}
         <p class="text-sm font-sans text-center">{class_contents["OUR CLASSES"][0]}</p>
       {/if}
     </div>
-    <div class="grid grid-rows-1 grid-cols-3 gap-x-12">
+    <div class="grid lg:grid-rows-1 lg:grid-cols-3 lg:gap-x-12 gap-y-4">
       {#each Object.keys(lesson_contents) as key}
         {@const lesson_key = assertPageKeys(key)}
         {#if lesson_contents[lesson_key]}
@@ -176,17 +176,18 @@
       {/each}
     </div>
   </section>
-  <nav class="flex bg-tertiary-500 justify-center p-8">
-    <h1 class="font-ostrich_black text-on-tertiary-token text-5xl w-full grow">{heros[1]}</h1>
+  <nav class="flex lg:flex-row flex-col bg-tertiary-500 justify-center items-center lg:p-8 p-4 gap-y-2">
+    <h1 class="font-ostrich_black text-on-tertiary-token lg:text-5xl text-center text-2xl w-full lg:grow">{heros[1]}</h1>
     <a
       href="#contact-us-form"
-      class="btn-link shrink text-white font-ostrich_black whitespace-nowrap hover:bg-white hover:text-tertiary-500">SCHEDULE A FREE EVALUATION</a>
+      class="lg:px-16 lg:py-4 px-8 py-2 bg-primary-500 rounded-[999px] lg:shrink text-white font-ostrich_black lg:whitespace-nowrap hover:bg-white hover:text-tertiary-500"
+      >SCHEDULE A FREE EVALUATION</a>
   </nav>
   <section
     id="Testimonials"
-    class="flex flex-col bg-white p-8">
+    class="flex flex-col bg-white p-8 gap-y-4 lg:[&>a]:self-center">
     <h1 class="font-ostrich_med text-5xl text-center">WHAT OUR CLIENTS HAVE TO SAY</h1>
-    <div class="grid grid-cols-3 gap-x-8 gap-y-4 p-12">
+    <div class="grid lg:grid-cols-3 grid-flow-row gap-x-8 gap-y-4 lg:p-12">
       {#each Testimonials as item ((item.rating, item.name, item.review, item.link))}
         <Testimonial
           href={item.link}
@@ -195,10 +196,8 @@
           review={item.review} />
       {/each}
     </div>
-    <div class="self-center">
-      <a
-        href="https://www.google.com/search?q=dogs+by+nature+dayton+reviews&sca_esv=4a613a7dfdc85553&sca_upv=1&sxsrf=ADLYWIJmYNWU-S6rLOIUOFAqGnNx_nDc4w%3A1724607188046&source=hp&ei=1GrLZuYL7uTk2g_noZDgDw&iflsig=AL9hbdgAAAAAZst45MiseGkTiwS6dza70KrrnuftbvaN&ved=0ahUKEwjmxcW21pCIAxVuMlkFHecQBPwQ4dUDCBg&uact=5&oq=dogs+by+nature+dayton+reviews&gs_lp=Egdnd3Mtd2l6Ih1kb2dzIGJ5IG5hdHVyZSBkYXl0b24gcmV2aWV3czIFEAAYgAQyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogRIvilQ2AJY6ihwBHgAkAEAmAF_oAHUFaoBBDMwLjK4AQPIAQD4AQGYAiSgApIWqAIKwgIHECMYJxjqAsICChAjGIAEGCcYigXCAhEQLhiABBixAxjRAxiDARjHAcICCxAuGIAEGNEDGMcBwgILEC4YgAQYsQMYgwHCAg4QLhiABBixAxjRAxjHAcICDhAAGIAEGLEDGIMBGIoFwgIEECMYJ8ICCBAuGIAEGLEDwgIIEAAYgAQYsQPCAgsQLhiABBixAxjUAsICCxAAGIAEGJIDGIoFwgILEC4YgAQYxwEYrwHCAggQABiABBjJA8ICDhAuGIAEGLEDGIMBGNQCwgIOEAAYgAQYsQMYgwEYyQPCAgsQABiABBixAxiDAcICDhAuGIAEGMcBGI4FGK8BwgIEEAAYA8ICBRAuGIAEwgIGEAAYFhgewgICECbCAggQABgWGB4YD8ICCBAAGKIEGIkFmAMFkgcEMzMuM6AHo-0B&sclient=gws-wiz#lrd=0x8840850d161a03db:0xd883eb6b49bd58f3,1,,,,"
-        class="btn-link !px-8 !py-4 hover:bg-tertiary-500">View More</a>
-    </div>
+    <a
+      href="https://www.google.com/search?q=dogs+by+nature+dayton+reviews&sca_esv=4a613a7dfdc85553&sca_upv=1&sxsrf=ADLYWIJmYNWU-S6rLOIUOFAqGnNx_nDc4w%3A1724607188046&source=hp&ei=1GrLZuYL7uTk2g_noZDgDw&iflsig=AL9hbdgAAAAAZst45MiseGkTiwS6dza70KrrnuftbvaN&ved=0ahUKEwjmxcW21pCIAxVuMlkFHecQBPwQ4dUDCBg&uact=5&oq=dogs+by+nature+dayton+reviews&gs_lp=Egdnd3Mtd2l6Ih1kb2dzIGJ5IG5hdHVyZSBkYXl0b24gcmV2aWV3czIFEAAYgAQyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogRIvilQ2AJY6ihwBHgAkAEAmAF_oAHUFaoBBDMwLjK4AQPIAQD4AQGYAiSgApIWqAIKwgIHECMYJxjqAsICChAjGIAEGCcYigXCAhEQLhiABBixAxjRAxiDARjHAcICCxAuGIAEGNEDGMcBwgILEC4YgAQYsQMYgwHCAg4QLhiABBixAxjRAxjHAcICDhAAGIAEGLEDGIMBGIoFwgIEECMYJ8ICCBAuGIAEGLEDwgIIEAAYgAQYsQPCAgsQLhiABBixAxjUAsICCxAAGIAEGJIDGIoFwgILEC4YgAQYxwEYrwHCAggQABiABBjJA8ICDhAuGIAEGLEDGIMBGNQCwgIOEAAYgAQYsQMYgwEYyQPCAgsQABiABBixAxiDAcICDhAuGIAEGMcBGI4FGK8BwgIEEAAYA8ICBRAuGIAEwgIGEAAYFhgewgICECbCAggQABgWGB4YD8ICCBAAGKIEGIkFmAMFkgcEMzMuM6AHo-0B&sclient=gws-wiz#lrd=0x8840850d161a03db:0xd883eb6b49bd58f3,1,,,,"
+      class="px-8 py-4 bg-primary-500 rounded-[999px] text-on-primary-token font-ostrich_black hover:bg-tertiary-500 text-center">View More</a>
   </section>
 </main>

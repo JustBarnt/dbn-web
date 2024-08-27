@@ -5,8 +5,8 @@
   import { Footer_Items } from "./Data/footer";
 </script>
 
-<footer class="flex flex-col">
-  <slot name="map" />
+<main class="flex flex-col">
+  <slot />
   <div
     class="flex justify-center items-center font-neonoir text-2xl bg-primary-500 align-middle mx-auto w-full p-2 gap-x-4"
     data-name="copyright-el">
@@ -26,4 +26,4 @@
       </div>
     {/each}
   </div>
-</footer>
+</main>

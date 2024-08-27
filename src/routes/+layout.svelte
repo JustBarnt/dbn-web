@@ -7,12 +7,10 @@
 
 <div class="grid h-screen w-screen grid-rows-[auto_1fr_auto]">
   <Header />
-  <main class="bg-surface-50 space-y-4">
+  <div class="bg-surface-50 space-y-4">
     <slot />
-  </main>
+  </div>
   <Footer>
-    <svelte:fragment slot="map">
-      <ContactUs />
-    </svelte:fragment>
+    <ContactUs />
   </Footer>
 </div>
