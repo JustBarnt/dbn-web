@@ -38,6 +38,29 @@
     border-width: 3px;
     background-color: "#ffffff";
   }
+
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details summary {
+    cursor: pointer;
+  }
+
+  details summary::before {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-image: url("./lib/assets/faq/FAQ_DownArrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.2s ease;
+    transform: rotate(270deg);
+  }
+
+  details[open] summary::before {
+    transform: rotate(360deg);
+  }
 }
 
 @layer utilities {

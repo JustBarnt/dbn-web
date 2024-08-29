@@ -17,8 +17,6 @@
     const fractionalPart = rating - fullStars;
 
     const result = rating / 5;
-
-    console.log(result * maxWidth);
     return maxWidth * result;
   }
 </script>

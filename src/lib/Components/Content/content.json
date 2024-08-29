@@ -70,28 +70,14 @@
     ]
   },
   "FAQ": {
-    "How often a day do you recommend working with your dog?": [
-      "I recommend working with your dog for 5-15 mins 1-3x a day. So if you have a busy day and all you have time for is a quick 5-minute session, great! Just have fun with your dog! As you progress with your training, everything you learn should become part of your everyday life and become second nature."
-    ],
-    "How often should we meet for private lessons?": [
-      "Depends on how busy your life is and how old your dog is. For most adult dogs' I like to meet once a week while for puppies we like to meet every other week to give them time to work through the puppy goldfish brain. My main concern is whether you've accomplished your homework and if your dog is ready to move on to the next steps. So we can adjust the time between our lessons as needed."
-    ],
-    "When can I join group classes?": [
-      "You're welcome to join group classes once you have approval from your trainer to join them. Dogs who need more confidence might join the confidence-building group before they even start private lessons' while others might not begin any group classes until after they've finished their private lessons. It fully depends on your dog and what they need."
-    ],
-    "What if I want to continue group classes after my training packages?": [
-      "Awesome! After your package has been completed group classes are only $30 per. We have some clients who come once a week while others only stop in every so often for a refresher."
-    ],
-    "What if I want to continue private lessons after my training package?": [
-      "Of course! We are here for the life of your dog so, if you ever have any problems or questions feel free to reach out! But if you need an add-on private lesson they are $125 per."
-    ],
-    "What is your training style?": [
-      "We are balanced trainers. This means that we teach everything using fun and positive methods by shaping and marker training but, when our dogs do understand what is expected of them but are pushing boundaries we can correct them whether it's a method of just removing them, telling them no, using our leash, or using an eCollar. But before we correct a dog it is important that they understand what is expected out of them, what pressure is, how to turn it off, and how to get what they want first. So we aren't just slapping on a tool and correcting our dogs either its all a taught process."
-    ],
-    "Can I make payment plans?": [
-      "We try to ask for the payment upfront before training begins. But, we understand times are tough now, so we offer the option of paying 1/2 upfront and then the second half by the 3rd lesson."
-    ],
-    "Do you offer discounts?": ["Yes, as a thank you, we offer a 5% discount to the military, veterans, first responders, nurses, and rescue dogs."]
+    "How often a day do you recommend working with your dog?": "I recommend working with your dog for 5-15 mins 1-3x a day. So if you have a busy day and all you have time for is a quick 5-minute session, great! Just have fun with your dog! As you progress with your training, everything you learn should become part of your everyday life and become second nature.",
+    "How often should we meet for private lessons?": "Depends on how busy your life is and how old your dog is. For most adult dogs' I like to meet once a week while for puppies we like to meet every other week to give them time to work through the puppy goldfish brain. My main concern is whether you've accomplished your homework and if your dog is ready to move on to the next steps. So we can adjust the time between our lessons as needed.",
+    "When can I join group classes?": "You're welcome to join group classes once you have approval from your trainer to join them. Dogs who need more confidence might join the confidence-building group before they even start private lessons' while others might not begin any group classes until after they've finished their private lessons. It fully depends on your dog and what they need.",
+    "What if I want to continue group classes after my training packages?": "Awesome! After your package has been completed group classes are only $30 per. We have some clients who come once a week while others only stop in every so often for a refresher.",
+    "What if I want to continue private lessons after my training package?": "Of course! We are here for the life of your dog so, if you ever have any problems or questions feel free to reach out! But if you need an add-on private lesson they are $125 per.",
+    "What is your training style?": "We are balanced trainers. This means that we teach everything using fun and positive methods by shaping and marker training but, when our dogs do understand what is expected of them but are pushing boundaries we can correct them whether it's a method of just removing them, telling them no, using our leash, or using an eCollar. But before we correct a dog it is important that they understand what is expected out of them, what pressure is, how to turn it off, and how to get what they want first. So we aren't just slapping on a tool and correcting our dogs either its all a taught process.",
+    "Can I make payment plans?": "We try to ask for the payment upfront before training begins. But, we understand times are tough now, so we offer the option of paying 1/2 upfront and then the second half by the 3rd lesson.",
+    "Do you offer discounts?": "Yes, as a thank you, we offer a 5% discount to the military, veterans, first responders, nurses, and rescue dogs."
   },
   "Our Classes": {
     "Private Lessons": [

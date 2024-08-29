@@ -57,7 +57,7 @@
   <nav
     class="lg:w-1/3 lg:min-w-[400px]"
     data-name="nav-el">
-    <ul class="font-ostrich_med dbn-ul-list lg:justify-between justify-evenly text-3xl">
+    <ul class="font-ostrich_med dbn-ul-list lg:justify-between justify-evenly md:text-3xl text-2xl">
       <li data-name="nav-home"><a href="/home">HOME</a></li>
       <li data-name="nav-classes"><a href="/classes">OUR CLASSES</a></li>
       <li data-name="nav-faqs"><a href="/faqs">FAQS</a></li>
