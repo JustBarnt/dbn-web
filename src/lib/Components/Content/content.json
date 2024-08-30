@@ -83,9 +83,30 @@
     "Private Lessons": [
       "In these classes, it is more about teaching the owners than it's teaching the dog. Owners will be hands-on as you learn handling skills, read your dog's body language, and build a relationship with your dog. You and your dog will learn how to walk on a leash, sit, down, stay, place, relax around distractions, and any other goals that you may have. My goals for every dog is that they are happy, respected, and living in peace at home."
     ],
-    "Bronze": ["$650", "5 Private Lessons", "4 Group Lessons", "Obedience Collar", "Leash", "This package is most ideal for puppies and owners wishing to do private lessons."],
-    "Silver": ["$1000", "6 Private Lessons", "16 Group Lessons", "Obedience Collar", "Mini Educator eCollar", "Leash"],
-    "Gold": ["$1300", "8 Private Lessons", "24 Group Lessons", "Obedience Collar", "Mini Educator eCollar", "Leash"],
+    "Packages": [
+      {
+        "Title": "Bronze",
+        "Image": "/src/lib/assets/our-classes/OurClasses_Private_Bronze.png",
+        "Price": "$650",
+        "Details": ["5 Private Lessons", "4 Group Lessons", "Obedience Collar", "Leash"],
+        "Additional": "This package is most ideal for puppies and owners wishing to do private lessons."
+      },
+      {
+        "Title": "Silver",
+        "Image": "/src/lib/assets/our-classes/OurClasses_Private_Silver.png",
+        "Price": "$1000",
+        "Details": ["6 Private Lessons", "16 Group Lessons", "Obedience Collar", "Mini Educator eCollar", "Leash"],
+        "Additional": ""
+      },
+      {
+        "Title": "Gold",
+        "Image": "/src/lib/assets/our-classes/OurClasses_Private_Gold.png",
+        "Price": "$1300",
+        "Details": ["8 Private Lessons", "24 Group Lessons", "Obedience Collar", "Mini Educator eCollar", "Leash"],
+        "Additional": ""
+      }
+    ],
+
     "Dog Walks": [
       "Don't have enough time in the day to be able to take your dog on a regular walk or maybe they pull too much or are a bit reactive? Well we will stop by during the day to pick your dog up to take them on a 30min walk. During these walks we will work with your dog to achieve a peaceful relaxing walk. You must live within 10 miles of our training center for one of these options. Special deal if you buy 5 you get 1 free. I will also send videos and pictures to you of your dog on their walk."
     ],
