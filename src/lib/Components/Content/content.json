@@ -80,79 +80,101 @@
     "Do you offer discounts?": "Yes, as a thank you, we offer a 5% discount to the military, veterans, first responders, nurses, and rescue dogs."
   },
   "Our Classes": {
-    "Private Lessons": [
-      "In these classes, it is more about teaching the owners than it's teaching the dog. Owners will be hands-on as you learn handling skills, read your dog's body language, and build a relationship with your dog. You and your dog will learn how to walk on a leash, sit, down, stay, place, relax around distractions, and any other goals that you may have. My goals for every dog is that they are happy, respected, and living in peace at home."
-    ],
-    "Packages": [
-      {
-        "Title": "Bronze",
-        "Image": "/src/lib/assets/our-classes/OurClasses_Private_Bronze.png",
-        "Price": "$650",
-        "Details": ["5 Private Lessons", "4 Group Lessons", "Obedience Collar", "Leash"],
-        "Additional": "This package is most ideal for puppies and owners wishing to do private lessons."
+    "Packages": {
+      "Lessons": {
+        "Title": "Private Lessons",
+        "Desc": "In these classes, it is more about teaching the owners than it's teaching the dog. Owners will be hands-on as you learn handling skills, read your dog's body language, and build a relationship with your dog. You and your dog will learn how to walk on a leash, sit, down, stay, place, relax around distractions, and any other goals that you may have. My goals for every dog is that they are happy, respected, and living in peace at home.",
+        "Levels": [
+          {
+            "Title": "Bronze",
+            "Image": "/src/lib/assets/our-classes/OurClasses_Private_Bronze.png",
+            "Price": "$650",
+            "Details": ["5 Private Lessons", "4 Group Lessons", "Obedience Collar", "Leash"],
+            "Additional": "This package is most ideal for puppies and owners wishing to do private lessons."
+          },
+          {
+            "Title": "Silver",
+            "Image": "/src/lib/assets/our-classes/OurClasses_Private_Silver.png",
+            "Price": "$1000",
+            "Details": ["6 Private Lessons", "16 Group Lessons", "Obedience Collar", "Mini Educator eCollar", "Leash"],
+            "Additional": ""
+          },
+          {
+            "Title": "Gold",
+            "Image": "/src/lib/assets/our-classes/OurClasses_Private_Gold.png",
+            "Price": "$1300",
+            "Details": ["8 Private Lessons", "24 Group Lessons", "Obedience Collar", "Mini Educator eCollar", "Leash"],
+            "Additional": ""
+          }
+        ]
       },
-      {
-        "Title": "Silver",
-        "Image": "/src/lib/assets/our-classes/OurClasses_Private_Silver.png",
-        "Price": "$1000",
-        "Details": ["6 Private Lessons", "16 Group Lessons", "Obedience Collar", "Mini Educator eCollar", "Leash"],
-        "Additional": ""
+      "Walks": {
+        "Title": "Dog Walks",
+        "Desc": "Don't have enough time in the day to be able to take your dog on a regular walk or maybe they pull too much or are a bit reactive? Well we will stop by during the day to pick your dog up to take them on a 30min walk. During these walks we will work with your dog to achieve a peaceful relaxing walk. You must live within 10 miles of our training center for one of these options. Special deal if you buy 5 you get 1 free. I will also send videos and pictures to you of your dog on their walk.",
+        "Levels": [
+          {
+            "Title": "Sniff Walks",
+            "Image": "/src/lib/assets/our-classes/OurClasses_Walk_Sniff.png",
+            "Price": "$35",
+            "Details": ["30 Min mentally fulfilling walk", "Relaxing", "Will go your dogs pace"],
+            "Additional": "This option is great for dogs who are perfect at everything else but they need to learn how to walk nice on a leash."
+          },
+          {
+            "Title": "Structure Walk",
+            "Image": "/src/lib/assets/our-classes/OurClasses_Walk_Structure.png",
+            "Price": "$50",
+            "Details": ["Your dog gets to learn a new skill", "Mentally and physically tiring"],
+            "Additional": "This option is great for dogs who are perfect at everything else but they need to learn how to walk nice on a leash."
+          },
+          {
+            "Title": "Reactive Dog",
+            "Image": "/src/lib/assets/our-classes/OurClasses_Walk_Reactive.png",
+            "Price": "$100",
+            "Details": [
+              "30 Mins of me working with your dog to walk nicely on a leash while I also work through their issues.",
+              "Your dog learns to be more neutral",
+              "Mentally and physically tiring"
+            ],
+            "Additional": "This option is great for dogs who get excited, scared, or aggressive when they see another animal as I work with them to be more neutral."
+          }
+        ]
       },
-      {
-        "Title": "Gold",
-        "Image": "/src/lib/assets/our-classes/OurClasses_Private_Gold.png",
-        "Price": "$1300",
-        "Details": ["8 Private Lessons", "24 Group Lessons", "Obedience Collar", "Mini Educator eCollar", "Leash"],
-        "Additional": ""
+      "Classes": {
+        "Title": "Group Classes",
+        "Desc": "Group Classes are included in all of our training packages. But every dog needs something different and every owner has a different goal so our group classes are designed to offer something for everyone but, you're also welcome to try them all (with approval).",
+        "Levels": [
+          {
+            "Title": "AKC Star Puppy",
+            "Image": "/src/lib/assets/our-classes/OurClasses_Group_Puppy.png",
+            "Heading": "$200",
+            "Additional": "This group class is for puppies under 6 months of age and would benefit from learning more in a group setting than a private lesson. This is a 8-week course where we will be learning the basics of Loose Leash Walking, Sit, Down, Stay, and Recall, all while learning to socialize and build confidence! For those looking to do the AKC S.T.A.R. Puppy, you would have to attend at least 6 group classes."
+          },
+          {
+            "Title": "GCG Prep",
+            "Image": "/src/lib/assets/our-classes/OurClasses_Group_CGC.png",
+            "Heading": "Every 1st Tuesday",
+            "Additional": "This is offered every first Tuesday of the Month at 7pm at our training center with free Canine Good Citizen testing for those who are ready after the class. In this class we will work on our obedience with distractions of other people and other dogs. Sits, Down, Stay, Heel, Recall, Grooming, and Greeting people."
+          },
+          {
+            "Title": "Group Hike",
+            "Image": "/src/lib/assets/our-classes/OurClasses_Group_Hike.png",
+            "Heading": "Every 2nd Tuesday",
+            "Additional": "This is offered every second Tuesday of the Month at 7pm at a different park each month so please check our social media page for location. In this class we are going to work on our dogs' neutrality to general life distractions and owners finding  balance between obedience and just letting your dog be a dog. Great for dogs who are reactive or nervous."
+          },
+          {
+            "Title": "Confidence Building",
+            "Image": "/src/lib/assets/our-classes/OurClasses_Group_Confidence.png",
+            "Heading": "Every 3rd Tuesday",
+            "Additional": "This is offered every third Tuesday of the month at 7pm at our training center. In this class we will work on body awareness, relationship building games, and teaching dogs just because something is new doesnt mean its scary. This is a great class for puppies and fearful dogs but all dogs are welcome to join once approved."
+          },
+          {
+            "Title": "Sport Samples",
+            "Image": "/src/lib/assets/our-classes/OurClasses_Group_Sport.png",
+            "Heading": "Every 4th Tuesday",
+            "Additional": "This is offered every fourth Tuesday of the month at 7pm at our training center. In this class we will introduce a new game or sport to you and your dog for you to try out. Nosework, Tracking, Rally, Trick Dog, and more! This is a great way to continue to build a relationship with your dog, give them a positive outlet, and try something new you both would enjoy! Checkout our social media for upcoming sports."
+          }
+        ]
       }
-    ],
-
-    "Dog Walks": [
-      "Don't have enough time in the day to be able to take your dog on a regular walk or maybe they pull too much or are a bit reactive? Well we will stop by during the day to pick your dog up to take them on a 30min walk. During these walks we will work with your dog to achieve a peaceful relaxing walk. You must live within 10 miles of our training center for one of these options. Special deal if you buy 5 you get 1 free. I will also send videos and pictures to you of your dog on their walk."
-    ],
-    "Sniff Walks": [
-      "$35",
-      "30 Min mentally fulfilling walk",
-      "Relaxing",
-      "Will go your dogs pace",
-      "This option is great for senior dogs, already trained dogs, or dogs that just need a break."
-    ],
-    "Structure Walk": [
-      "$50",
-      "30 Mins of me working with your dog to walk nicely on a leash",
-      "Your dog gets to learn a new skill",
-      "Mentally and physically tiring",
-      "This option is great for dogs who are perfect at everything else but they need to learn how to walk nice on a leash."
-    ],
-    "Reactive Dog": [
-      "$100",
-      "30 Mins of me working with your dog to walk nicely on a leash while I also work through their issues.",
-      "Your dog learns to be more neutral",
-      "Mentally and physically tiring",
-      "This option is great for dogs who get excited, scared, or aggressive when they see another animal as I work with them to be more neutral."
-    ],
-    "Group Classes": [
-      "Group Classes are included in all of our training packages. But every dog needs something different and every owner has a different goal so our group classes are designed to offer something for everyone but, you're also welcome to try them all (with approval)."
-    ],
-    "AKC Star Puppy": [
-      "$200",
-      "This group class is for puppies under 6 months of age and would benefit from learning more in a group setting than a private lesson. This is a 8-week course where we will be learning the basics of Loose Leash Walking, Sit, Down, Stay, and Recall, all while learning to socialize and build confidence! For those looking to do the AKC S.T.A.R. Puppy, you would have to attend at least 6 group classes."
-    ],
-    "GCG Prep": [
-      "EVERY 1st TUESDAY",
-      "This is offered every first Tuesday of the Month at 7pm at our training center with free Canine Good Citizen testing for those who are ready after the class. In this class we will work on our obedience with distractions of other people and other dogs. Sits, Down, Stay, Heel, Recall, Grooming, and Greeting people."
-    ],
-    "Group Hike": [
-      "EVERY 2ND TUESDAY",
-      "This is offered every second Tuesday of the Month at 7pm at a different park each month so please check our social media page for location. In this class we are going to work on our dogs' neutrality to general life distractions and owners finding  balance between obedience and just letting your dog be a dog. Great for dogs who are reactive or nervous."
-    ],
-    "Confidence Building": [
-      "EVERY 3RD TUESDAY",
-      "This is offered every third Tuesday of the month at 7pm at our training center. In this class we will work on body awareness, relationship building games, and teaching dogs just because something is new doesnt mean its scary. This is a great class for puppies and fearful dogs but all dogs are welcome to join once approved."
-    ],
-    "Sport Sampler": [
-      "EVERY 4TH TUESDAY",
-      "This is offered every fourth Tuesday of the month at 7pm at our training center. In this class we will introduce a new game or sport to you and your dog for you to try out. Nosework, Tracking, Rally, Trick Dog, and more! This is a great way to continue to build a relationship with your dog, give them a positive outlet, and try something new you both would enjoy! Checkout our social media for upcoming sports."
-    ]
+    }
   }
 }

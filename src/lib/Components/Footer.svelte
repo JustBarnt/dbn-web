@@ -1,11 +1,8 @@
 <script>
-  import Facebook from "$lib/icons/facebook.svelte";
-  import Instagram from "$lib/icons/instagram.svelte";
-  import Messenger from "$lib/icons/messenger.svelte";
-  import { Footer_Items } from "./Data/footer";
+  import Footer_Items from "$lib/components/Content/footer.json";
 </script>
 
-<main class="flex flex-col">
+<footer class="flex flex-col">
   <slot />
   <div
     class="flex justify-center items-center font-neonoir text-2xl bg-primary-500 align-middle mx-auto w-full p-2 gap-x-4"
@@ -19,11 +16,21 @@
       <div class="flex flex-col gap-2 lg:bg-tertiary-500 lg:even:bg-tertiary-500 even:bg-tertiary-700 p-4">
         <h3 class="text-2xl font-neonoir tracking-wide text-white border-b-4 border-secondary-500 pb-2">{item.title}</h3>
         <div class="grid grid-cols-3 lg:flex lg:flex-col">
-          {#each item.items as i}
-            <p class="font-ostrich_black tracking-[0.1em] leading-snug text-white text-base whitespace-pre-line">{i}</p>
-          {/each}
+          <ul class="footer-list">
+            {#each item.items as i}
+              {#if i.link !== ""}
+                <li>
+                  <a
+                    href={i.link}
+                    class="font-ostrich_black tracking-[0.1em] leading-snug text-white text-base whitespace-pre-line underline">{i.item}</a>
+                </li>
+              {:else}
+                <p class="font-ostrich_black tracking-[0.1em] leading-snug text-white text-base whitespace-pre-line">{i.item}</p>
+              {/if}
+            {/each}
+          </ul>
         </div>
       </div>
     {/each}
   </div>
-</main>
+</footer>

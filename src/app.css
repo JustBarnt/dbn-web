@@ -82,6 +82,23 @@
     }
   }
 
+  ul.footer-list {
+    a:hover,
+    a:active,
+    li.active {
+      text-decoration-line: underline;
+      text-decoration-color: rgb(var(--color-primary-500) / 1);
+      text-underline-offset: 2px;
+    }
+    a,
+    li {
+      text-underline-offset: 2px;
+    }
+    a:hover {
+      color: rgb(var(--color-primary-500) / 1);
+    }
+  }
+
   .header-lg-styles {
     @apply lg:flex-row lg:justify-between lg:items-center;
   }
@@ -89,10 +106,6 @@
   .footer-lg-styles {
     @apply lg:grid lg:grid-cols-[auto_auto_auto];
   }
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 @font-face {

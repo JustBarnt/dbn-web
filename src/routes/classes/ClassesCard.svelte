@@ -2,21 +2,29 @@
   import PawBP from "$lib/assets/our-classes/OurClasses_PawprintBulletPoint.png";
 
   /** @type string */
+  export let width = "w-1/3";
+  /** @type string */
   export let card_title;
   /** @type string */
   export let price;
   /** @type string[] */
-  export let card_points;
+  export let card_points = [];
   /** @type string */
   export let additional_info = "";
+
+  $: card_id = card_title.replaceAll(/\s/g, "");
 </script>
 
-<div class="card shadow-lg w-1/3">
+<div
+  id={card_id}
+  class="card shadow-lg {width}">
   <div class="flex flex-col p-4 items-center gap-y-2">
     <slot name="image" />
-    <h2 class="font-neonoir h2">{card_title}</h2>
+    <h2 class="font-neonoir text-3xl whitespace-nowrap">
+      {card_title}
+    </h2>
     <h3 class="font-ostrich_black h3 text-primary-500">{price}</h3>
-    <div class="grid grid-cols-[15%_85%] grid-flow-row gap-2 items-center">
+    <div class="grid grid-cols-[15%_85%] grid-flow-row gap-2 items-center {card_points.length === 0 ? 'hidden' : ''}">
       {#each card_points as point}
         <img
           src={PawBP}

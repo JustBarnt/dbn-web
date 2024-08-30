@@ -47,7 +47,7 @@
   }
 </script>
 
-<header class="flex header-lg-styles flex-col gap-y-8 sticky top-0 z-10 bg-surface-50/80 backdrop-blur-sm p-4 border-b-primary-500 border-b-8">
+<header class="flex header-lg-styles flex-col gap-y-8 sticky top-0 z-[1000] bg-surface-50/80 backdrop-blur-sm p-4 border-b-primary-500 border-b-8">
   <img
     class="self-center"
     width="280px"
