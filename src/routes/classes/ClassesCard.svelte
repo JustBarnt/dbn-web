@@ -24,7 +24,7 @@
       {card_title}
     </h2>
     <h3 class="font-ostrich_black h3 text-primary-500">{price}</h3>
-    <div class="grid grid-cols-[15%_85%] grid-flow-row gap-2 items-center {card_points.length === 0 ? 'hidden' : ''}">
+    <div class="grid grid-cols-[35px_auto] grid-flow-row gap-2 items-center {card_points.length === 0 ? 'hidden' : ''}">
       {#each card_points as point}
         <img
           src={PawBP}

@@ -46,7 +46,7 @@
     </div>
   </section>
   <section
-    id="DogWalks"
+    id="DogWalking"
     class="flex flex-col lg:px-24 lg:py-16 bg-surface-50">
     <div class="flex flex-col gap-8">
       <div class="flex flex-col items-center">
@@ -75,7 +75,7 @@
     </div>
   </section>
   <section
-    id="GroupClasses"
+    id="GroupTraining"
     class="flex flex-col lg:px-24 lg:py-16 bg-white gap-y-12">
     <div class="flex flex-col gap-8">
       <div>

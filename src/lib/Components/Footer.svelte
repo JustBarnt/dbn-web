@@ -1,5 +1,10 @@
 <script>
   import Footer_Items from "$lib/components/Content/footer.json";
+  import content from "$lib/Components/Content/content.json";
+  import { extractAnchors } from "./utils";
+
+  const anchors = extractAnchors(content);
+  console.log(anchors);
 </script>
 
 <footer class="flex flex-col">
@@ -19,11 +24,15 @@
           <ul class="footer-list">
             {#each item.items as i}
               {#if i.link !== ""}
-                <li>
-                  <a
-                    href={i.link}
-                    class="font-ostrich_black tracking-[0.1em] leading-snug text-white text-base whitespace-pre-line underline">{i.item}</a>
-                </li>
+                {#each anchors as anchor}
+                  {#if i.item === anchor.Title}
+                    <li>
+                      <a
+                        href="/classes#{anchor.Anchor}"
+                        class="font-ostrich_black tracking-[0.1em] leading-snug text-white text-base whitespace-pre-line underline">{i.item}</a>
+                    </li>
+                  {/if}
+                {/each}
               {:else}
                 <p class="font-ostrich_black tracking-[0.1em] leading-snug text-white text-base whitespace-pre-line">{i.item}</p>
               {/if}

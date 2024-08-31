@@ -60,16 +60,16 @@
         "item": "Private Lessons"
       },
       {
-        "link": "/classes#DogWalks",
+        "link": "/classes#DogWalking",
         "item": "Dog Walking"
       },
       {
-        "link": "/classes#GroupClasses",
-        "item": "Group Classes"
+        "link": "/classes#GroupTraining",
+        "item": "Group Training"
       },
       {
         "link": "/classes#SniffWalks",
-        "item": "Sniff Walk"
+        "item": "Sniff Walks"
       },
       {
         "link": "/classes#StructureWalk",
@@ -85,15 +85,15 @@
       },
       {
         "link": "/classes#CGCPrep",
-        "item": "Canine Good Citizen"
+        "item": "CGC Prep"
       },
       {
         "link": "/classes#AKCStarPuppy",
-        "item": "Star Puppy Group Classes"
+        "item": "AKC Star Puppy"
       },
       {
         "link": "/classes#SportSamples",
-        "item": "Dog Sports"
+        "item": "Sport Sampler"
       },
       {
         "link": "/classes#ConfidenceBuilding",

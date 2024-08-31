@@ -1,105 +1,15 @@
 <script>
-  import Star from "$lib/icons/star.svelte";
   import Banner from "$lib/Components/Banner.svelte";
-  import Icon from "./Icon.svelte";
-  import site_contents from "$lib/Components/Content/content.json";
+  import site_content from "$lib/Components/Content/content.json";
   import home_certifications from "$lib/assets/home/Home_Certifications.png";
-  import private_lessons from "$lib/assets/home/Home_Class_PrivateLessons.png";
-  import dog_walking from "$lib/assets/home/Home_Class_DogWalking.png";
-  import group_training from "$lib/assets/home/Home_Class_GroupTraining.png";
   import Testimonial from "$lib/Components/Testimonial.svelte";
   import Testimonials from "$lib/Components/Content/testimonials.json";
+  import OfferingsArticle from "./OfferingsArticle.svelte";
+  import ClassesArticle from "./ClassesArticle.svelte";
 
-  const heros = site_contents["Heros"];
-  const page_contents = site_contents["Home"];
-  const home_contents = page_contents[0];
-  const class_contents = page_contents[1];
-  const lesson_contents = page_contents[2];
-
-  /**
-   * Maps Key Point names from content to its matching icon
-   * @param {string} key_name
-   * @returns {IconKeys}
-   */
-  function icon_map(key_name) {
-    let icon_key = key_name.toLowerCase().replaceAll(/\s/g, "_");
-    return assertIconKey(icon_key);
-  }
-
-  /**
-   * returns the tailwindcss key for correct ordering
-   * @param {PageKeys} key
-   */
-  function order_cols(key) {
-    if (!assertPageKeys(key)) return;
-
-    switch (key) {
-      case "Obedience":
-        return "flex-row order-1";
-      case "Behavioral Issues":
-        return "flex-row order-3";
-      case "Positive Outlets":
-        return "flex-row order-5";
-
-      case "Off Leash Training":
-        return "flex-row-reverse text-right order-2";
-      case "Working Dogs":
-        return "flex-row-reverse text-right order-4";
-      case "Relationship Building":
-        return "flex-row-reverse text-right order-6";
-    }
-  }
-
-  /**
-   * Asserts that the provided string is a valid Icon
-   * @param {string | IconKeys} key - The string to check
-   * @returns {IconKeys}
-   * @throws {Error} - Errors if the string was not a valid icon name
-   */
-  function assertIconKey(key) {
-    const valid_icons = Object.keys(home_contents).map((key) => key.toLowerCase().replaceAll(/\s/g, "_"));
-    if (!valid_icons.includes(key)) throw new Error(`Invalid Icon Name: ${key}`);
-
-    //@ts-ignore
-    return key;
-  }
-
-  /**
-   * Asserts that the provided string is a valid key in {site_contents}
-   * @param {string | PageKeys} key - The string to check
-   * @returns {PageKeys}
-   * @throws {Error} - Errors if the string was not a valid icon name
-   */
-  function assertPageKeys(key) {
-    const home_keys = Object.keys(home_contents);
-    const class_keys = Object.keys(class_contents);
-    const lesson_keys = Object.keys(lesson_contents);
-    let valid_icons = [...home_keys, ...class_keys, ...lesson_keys];
-
-    if (!valid_icons.includes(key)) throw new Error(`Invalid Page Key: ${key}`);
-
-    //@ts-ignore
-    return key;
-  }
-
-  /**
-   * Returns a formatted string replacing spaces with underscores
-   * @param {string} str
-   * @returns private_lessons | dog_walking | group_training
-   */
-  function format_source(str) {
-    let str_format = str.toLowerCase().replaceAll(/\s/g, "_");
-    switch (str_format) {
-      case "private_lessons":
-        return private_lessons;
-      case "dog_walking":
-        return dog_walking;
-      case "group_training":
-        return group_training;
-      default:
-        return "";
-    }
-  }
+  const heros = site_content["Heros"];
+  const page_content = site_content["Home"];
+  const { Offers, Classes } = page_content;
 </script>
 
 <main
@@ -109,32 +19,15 @@
   <section
     id="Training-Details"
     class="w-full lg:px-16 lg:py-8 p-8 flex flex-col gap-8 bg-white">
-    <h1 class="font-ostrich_med text-5xl text-center">{heros[0]}</h1>
+    <h1 class="font-ostrich_med text-5xl text-center">{Offers.Title}</h1>
     <section
       id="Training-Details-Grid"
       class="grid lg:grid-cols-2 md:grid-rows-2 md:grid-cols-1">
-      {#each Object.keys(home_contents) as key}
-        {@const page_key = assertPageKeys(key)}
-        {#if home_contents[page_key]}
-          <article class="w-full flex p-4 gap-2 {order_cols(page_key)}">
-            <span class="min-w-16 max-w-[106px] lg:place-self-start place-self-center">
-              <Icon icon={icon_map(key)} />
-            </span>
-            <div class="flex flex-col home-help">
-              <h3 class="font-neonoir text-tertiary-500 text-3xl">
-                {key}
-              </h3>
-              {#each home_contents[page_key] as value}
-                <p class="text-sm font-sans">
-                  {value}
-                </p>
-              {/each}
-              <a
-                href="/classes"
-                class="font-ostrich_black text-primary-500 hover:text-tertiary-500">LEARN MORE</a>
-            </div>
-          </article>
-        {/if}
+      {#each Offers.Offerings as Offering, index}
+        <OfferingsArticle
+          {Offering}
+          order="order-{index + 1}"
+          flex_dir={index % 2 ? "flex-row-reverse" : "flex-row"} />
       {/each}
     </section>
   </section>
@@ -150,29 +43,12 @@
     id="Our-Classes"
     class="flex flex-col lg:px-16 lg:py-8 p-8 gap-8">
     <div class="lg:px-40 space-y-2">
-      <h1 class="font-ostrich_med text-5xl text-center">Our Classes</h1>
-      {#if class_contents["OUR CLASSES"]}
-        <p class="text-sm font-sans text-center">{class_contents["OUR CLASSES"][0]}</p>
-      {/if}
+      <h1 class="font-ostrich_med text-5xl text-center">{Classes.Title}</h1>
+      <p class="text-sm font-sans text-center">{Classes.Desc}</p>
     </div>
     <div class="grid lg:grid-rows-1 lg:grid-cols-3 lg:gap-x-12 gap-y-4">
-      {#each Object.keys(lesson_contents) as key}
-        {@const lesson_key = assertPageKeys(key)}
-        {#if lesson_contents[lesson_key]}
-          <article class="card flex flex-col justify-around items-center gap-y-2 p-8 bg-white shadow-lg">
-            <img
-              width="206px"
-              src={format_source(key)}
-              alt={key} />
-            <h3 class="font-neonoir text-2xl text-center">
-              {key}
-            </h3>
-            {#each lesson_contents[lesson_key] as value}
-              <p class="text-sm font-sans text-center py-4">{value}</p>
-            {/each}
-            <button class="font-ostrich_black text-primary-500 !bg-gray-100 hover:!bg-tertiary-500 hover:!text-white">PRICING</button>
-          </article>
-        {/if}
+      {#each Classes.Classes as Class}
+        <ClassesArticle {Class} />
       {/each}
     </div>
   </section>

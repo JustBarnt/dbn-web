@@ -10,23 +10,6 @@
   afterNavigate((event) => {
     const hash = window.location.hash.replace("#", "");
     if (hash) scrollToAnchor(hash);
-
-    // if (event.to?.url.hash) {
-    //   const element = document.getElementById(event.to.url.hash);
-    //   // if (element) element.scrollIntoView({ behavior: "smooth" });
-    //
-    //   if (element) {
-    //     const rect = element.getBoundingClientRect();
-    //     const offset = window.innerHeight / 2 - rect.height / 2;
-    //
-    //     console.log("Bounding Rect:", rect, "Offset:", offset);
-    //
-    //     window.scrollTo({
-    //       top: rect.top + window.scrollY - offset,
-    //       behavior: "smooth"
-    //     });
-    //   }
-    // }
   });
 
   onMount(() => {
