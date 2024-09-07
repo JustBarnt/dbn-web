@@ -1,7 +1,7 @@
 <script>
   import { page } from "$app/stores";
   import { beforeUpdate, onMount, afterUpdate } from "svelte";
-  import logo from "$lib/assets/logo.png";
+  import logo from "/assets/logo.png";
 
   onMount(setActive);
   afterUpdate(setActive);

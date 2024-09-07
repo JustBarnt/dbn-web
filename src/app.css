@@ -51,7 +51,7 @@
     content: "";
     width: 36px;
     height: 36px;
-    background-image: url("./lib/assets/faq/FAQ_DownArrow.png");
+    background-image: url("/assets/faq/FAQ_DownArrow.png");
     background-size: contain;
     background-repeat: no-repeat;
     transition: transform 0.2s ease;
@@ -121,14 +121,14 @@
 
 @font-face {
   font-family: "ostrich_sansblack";
-  src: url("./assets/fonts/OstrichSans/ostrich-sans.sans-black.ttf") format("truetype");
+  src: url("/assets/fonts/OstrichSans/ostrich-sans.sans-black.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ostrich_sansmedium";
-  src: url("./assets/fonts/OstrichSans/ostrich-sans.sans-medium.ttf") format("truetype");
+  src: url("/assets/fonts/OstrichSans/ostrich-sans.sans-medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

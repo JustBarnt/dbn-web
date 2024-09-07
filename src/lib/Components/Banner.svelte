@@ -1,8 +1,8 @@
 <script>
-  import home from "$lib/assets/banners/Home_Header.png";
-  import about from "$lib/assets/banners/About_Header.png";
-  import classes from "$lib/assets/banners/OurClasses_Header.png";
-  import blog from "$lib/assets/banners/Blog_Header.png";
+  import home from "/assets/banners/Home_Header.png";
+  import about from "/assets/banners/About_Header.png";
+  import classes from "/assets/banners/OurClasses_Header.png";
+  import blog from "/assets/banners/Blog_Header.png";
   import { page } from "$app/stores";
 
   /** @type {Banners} */
