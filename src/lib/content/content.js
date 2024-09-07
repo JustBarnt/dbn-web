@@ -14,7 +14,7 @@ export const site_content = {
           Details: [
             "Just starting out or you wish to go on a more enjoyable walk? We will help prepare you and your dog for real life scenarios where you feel confident having people over and taking them into the public."
           ],
-          Icon: "/src/lib/assets/home/Home_Icon_Obedience.png",
+          Icon: "/assets/home/Home_Icon_Obedience.png",
           Alt: "Icon of a dog being walked"
         },
         {
@@ -22,7 +22,7 @@ export const site_content = {
           Details: [
             "Looking to do some off leash work or allow your pup to play in an unfenced yard safely? We'll show you how to properly introduce and communicate to your dog using an eCollar."
           ],
-          Icon: "/src/lib/assets/home/Home_Icon_OffLeash.png",
+          Icon: "/assets/home/Home_Icon_OffLeash.png",
           Alt: "Icon of a eCollar Remote for dog training"
         },
         {
@@ -30,13 +30,13 @@ export const site_content = {
           Details: [
             "Is life with your dog just not ideal? Leash pulling, counter surfing, resource guarding, jumping, and aggression are just a few issues we can help with by creating clear boundaries and confidence."
           ],
-          Icon: "/src/lib/assets/home/Home_Icon_BehaviorIssues.png",
+          Icon: "/assets/home/Home_Icon_BehaviorIssues.png",
           Alt: "Icon of a dog pulling its leash"
         },
         {
           Title: "Working Dogs",
           Details: ["Looking to give your dog a job to help you or others? Service dog, therapy dog, and detection dogs are just a few jobs your dog could thrive doing!"],
-          Icon: "/src/lib/assets/home/Home_Icon_WorkingDogs.png",
+          Icon: "/assets/home/Home_Icon_WorkingDogs.png",
           Alt: "Icon of a service or therapy dog"
         },
         {
@@ -44,7 +44,7 @@ export const site_content = {
           Details: [
             "A lot of modern dogs have behavioral issues due to their generic needs not being met. Let us teach these dogs different games and sports to allow them the outlet they need to be genetically fulfilled."
           ],
-          Icon: "/src/lib/assets/home/Home_Icon_PositiveOutlets.png",
+          Icon: "/assets/home/Home_Icon_PositiveOutlets.png",
           Alt: "Icon of a dog running next to its own riding a bike"
         },
         {
@@ -52,7 +52,7 @@ export const site_content = {
           Details: [
             "During our lessons together we will go over your dog's body language and decode exactly what they are saying to us so we can build trust, understanding, and a partnership between you and your dog."
           ],
-          Icon: "/src/lib/assets/home/Home_Icon_RelationshipBuilding.png",
+          Icon: "/assets/home/Home_Icon_RelationshipBuilding.png",
           Alt: "Icon of a dog and its owner"
         }
       ]
@@ -66,7 +66,7 @@ export const site_content = {
           Details: [
             "This is a hands-on experience where both you and your dog learn life long skills. We give you the knowledge, skills, and support needed so you can better communicate with your best friend and get the results you're looking for."
           ],
-          Image: "/src/lib/assets/home/Home_Class_PrivateLessons.png",
+          Image: "/assets/home/Home_Class_PrivateLessons.png",
           Alt: "Image of someone walking their dog",
           Anchor: "PrivateLessons"
         },
@@ -75,7 +75,7 @@ export const site_content = {
           Details: [
             "Do you just need a dog walker to tire your dog out while you are at work or even work on their leash skills during the day? Available within 10 miles of our training Center."
           ],
-          Image: "/src/lib/assets/home/Home_Class_DogWalking.png",
+          Image: "/assets/home/Home_Class_DogWalking.png",
           Alt: "Image of a dog looking up at its owner while walking",
           Anchor: "DogWalking"
         },
@@ -84,7 +84,7 @@ export const site_content = {
           Details: [
             "We Offer multiple types of group classes for anyone who has taken classes with us or with prior approval. Puppy Socialization, CGC Prep, Group Distractions, Confidence Building, Pack Hike, and Sport Dog Options"
           ],
-          Image: "/src/lib/assets/home/Home_Class_GroupTraining.png",
+          Image: "/assets/home/Home_Class_GroupTraining.png",
           Alt: "Image of several people working with dogs",
           Anchor: "GroupTraining"
         }
@@ -146,7 +146,7 @@ export const site_content = {
           {
             Title: "Bronze",
             Anchor: "Bronze",
-            Image: "/src/lib/assets/our-classes/OurClasses_Private_Bronze.png",
+            Image: "/assets/our-classes/OurClasses_Private_Bronze.png",
             Price: "$650",
             Details: ["5 Private Lessons", "4 Group Lessons", "Obedience Collar", "Leash"],
             Additional: "This package is most ideal for puppies and owners wishing to do private lessons."
@@ -154,7 +154,7 @@ export const site_content = {
           {
             Title: "Silver",
             Anchor: "Silver",
-            Image: "/src/lib/assets/our-classes/OurClasses_Private_Silver.png",
+            Image: "/assets/our-classes/OurClasses_Private_Silver.png",
             Price: "$1000",
             Details: ["6 Private Lessons", "16 Group Lessons", "Obedience Collar", "Mini Educator eCollar", "Leash"],
             Additional: ""
@@ -162,7 +162,7 @@ export const site_content = {
           {
             Title: "Gold",
             Anchor: "Gold",
-            Image: "/src/lib/assets/our-classes/OurClasses_Private_Gold.png",
+            Image: "/assets/our-classes/OurClasses_Private_Gold.png",
             Price: "$1300",
             Details: ["8 Private Lessons", "24 Group Lessons", "Obedience Collar", "Mini Educator eCollar", "Leash"],
             Additional: ""
@@ -177,7 +177,7 @@ export const site_content = {
           {
             Title: "Sniff Walks",
             Anchor: "SniffWalks",
-            Image: "/src/lib/assets/our-classes/OurClasses_Walk_Sniff.png",
+            Image: "/assets/our-classes/OurClasses_Walk_Sniff.png",
             Price: "$35",
             Details: ["30 Min mentally fulfilling walk", "Relaxing", "Will go your dogs pace"],
             Additional: "This option is great for senior dogs, already trained dogs, or dogs that just need a break."
@@ -185,7 +185,7 @@ export const site_content = {
           {
             Title: "Structure Walk",
             Anchor: "StructureWalk",
-            Image: "/src/lib/assets/our-classes/OurClasses_Walk_Structure.png",
+            Image: "/assets/our-classes/OurClasses_Walk_Structure.png",
             Price: "$50",
             Details: ["Your dog gets to learn a new skill", "Mentally and physically tiring"],
             Additional: "This option is great for dogs who are perfect at everything else but they need to learn how to walk nice on a leash."
@@ -193,7 +193,7 @@ export const site_content = {
           {
             Title: "Reactive Dog",
             Anchor: "ReactiveDog",
-            Image: "/src/lib/assets/our-classes/OurClasses_Walk_Reactive.png",
+            Image: "/assets/our-classes/OurClasses_Walk_Reactive.png",
             Price: "$100",
             Details: [
               "30 Mins of me working with your dog to walk nicely on a leash while I also work through their issues.",
@@ -212,7 +212,7 @@ export const site_content = {
           {
             Title: "AKC Star Puppy",
             Anchor: "AKCStarPuppy",
-            Image: "/src/lib/assets/our-classes/OurClasses_Group_Puppy.png",
+            Image: "/assets/our-classes/OurClasses_Group_Puppy.png",
             Heading: "$200",
             Additional:
               "This group class is for puppies under 6 months of age and would benefit from learning more in a group setting than a private lesson. This is a 8-week course where we will be learning the basics of Loose Leash Walking, Sit, Down, Stay, and Recall, all while learning to socialize and build confidence! For those looking to do the AKC S.T.A.R. Puppy, you would have to attend at least 6 group classes."
@@ -220,7 +220,7 @@ export const site_content = {
           {
             Title: "CGC Prep",
             Anchor: "CGCPrep",
-            Image: "/src/lib/assets/our-classes/OurClasses_Group_CGC.png",
+            Image: "/assets/our-classes/OurClasses_Group_CGC.png",
             Heading: "Every 1st Tuesday",
             Additional:
               "This is offered every first Tuesday of the Month at 7pm at our training center with free Canine Good Citizen testing for those who are ready after the class. In this class we will work on our obedience with distractions of other people and other dogs. Sits, Down, Stay, Heel, Recall, Grooming, and Greeting people."
@@ -228,7 +228,7 @@ export const site_content = {
           {
             Title: "Group Hike",
             Anchor: "GroupHike",
-            Image: "/src/lib/assets/our-classes/OurClasses_Group_Hike.png",
+            Image: "/assets/our-classes/OurClasses_Group_Hike.png",
             Heading: "Every 2nd Tuesday",
             Additional:
               "This is offered every second Tuesday of the Month at 7pm at a different park each month so please check our social media page for location. In this class we are going to work on our dogs' neutrality to general life distractions and owners finding balance between obedience and just letting your dog be a dog. Great for dogs who are reactive or nervous."
@@ -236,7 +236,7 @@ export const site_content = {
           {
             Title: "Confidence Building",
             Anchor: "ConfidenceBuilding",
-            Image: "/src/lib/assets/our-classes/OurClasses_Group_Confidence.png",
+            Image: "/assets/our-classes/OurClasses_Group_Confidence.png",
             Heading: "Every 3rd Tuesday",
             Additional:
               "This is offered every third Tuesday of the month at 7pm at our training center. In this class we will work on body awareness, relationship building games, and teaching dogs just because something is new doesnt mean its scary. This is a great class for puppies and fearful dogs but all dogs are welcome to join once approved."
@@ -244,7 +244,7 @@ export const site_content = {
           {
             Title: "Sport Sampler",
             Anchor: "SportSampler",
-            Image: "/src/lib/assets/our-classes/OurClasses_Group_Sport.png",
+            Image: "/assets/our-classes/OurClasses_Group_Sport.png",
             Heading: "Every 4th Tuesday",
             Additional:
               "This is offered every fourth Tuesday of the month at 7pm at our training center. In this class we will introduce a new game or sport to you and your dog for you to try out. Nosework, Tracking, Rally, Trick Dog, and more! This is a great way to continue to build a relationship with your dog, give them a positive outlet, and try something new you both would enjoy! Checkout our social media for upcoming sports."
