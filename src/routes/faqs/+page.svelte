@@ -1,5 +1,5 @@
 <script>
-  import site_content from "$lib/Components/Content/content.json";
+  import { site_content } from "$lib/content/content";
   const faqs = Object.entries(site_content.FAQ);
 </script>
 

@@ -1,9 +1,9 @@
 <script>
   import Banner from "$lib/Components/Banner.svelte";
-  import site_content from "$lib/Components/Content/content.json";
+  import { site_content } from "$lib/content/content";
+  import { testimonials as Testimonials } from "$lib/content/testimonials";
   import home_certifications from "$lib/assets/home/Home_Certifications.png";
   import Testimonial from "$lib/Components/Testimonial.svelte";
-  import Testimonials from "$lib/Components/Content/testimonials.json";
   import OfferingsArticle from "./OfferingsArticle.svelte";
   import ClassesArticle from "./ClassesArticle.svelte";
 

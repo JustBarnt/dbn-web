@@ -1,6 +1,6 @@
 <script>
   import Banner from "$lib/Components/Banner.svelte";
-  import site_content from "$lib/Components/Content/content.json";
+  import { site_content } from "$lib/content/content";
   import IconBanner from "$lib/assets/our-classes/OurClasses_Icons.png";
   import ClassesCard from "./ClassesCard.svelte";
 

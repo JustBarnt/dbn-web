@@ -2,7 +2,7 @@
   import Banner from "$lib/Components/Banner.svelte";
   import Louie from "$lib/assets/about/About_Louie.png";
   import Ari from "$lib/assets/about/About_Ari.png";
-  import page_content from "$lib/Components/Content/content.json";
+  import { site_content as page_content } from "$lib/content/content";
 
   const about = page_content.About;
 </script>

@@ -1,10 +1,9 @@
 <script>
-  import Footer_Items from "$lib/components/Content/footer.json";
-  import content from "$lib/Components/Content/content.json";
+  import { footer as Footer_Items } from "$lib/content/footer";
+  import { site_content as content } from "$lib/content/content";
   import { extractAnchors } from "./utils";
 
   const anchors = extractAnchors(content);
-  console.log(anchors);
 </script>
 
 <footer class="flex flex-col">
