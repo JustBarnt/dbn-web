@@ -1,5 +1,5 @@
 <script>
-  import PawBP from "assets/our-classes/OurClasses_PawprintBulletPoint.png";
+  import PawBP from "/assets/our-classes/OurClasses_PawprintBulletPoint.png";
 
   /** @type string */
   export let width = "w-1/3";
