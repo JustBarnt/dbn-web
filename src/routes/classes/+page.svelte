@@ -13,20 +13,20 @@
   <Banner />
   <section
     id="PrivateLessons"
-    class="flex flex-col lg:px-24 lg:py-16 bg-white gap-y-12">
-    <div class="w-3/4 self-center">
+    class="flex flex-col lg:px-24 lg:py-16 px-12 py-8 bg-white gap-y-12">
+    <div class="lg:w-3/4 w-full self-center">
       <img
         src={IconBanner}
         alt="Banner of Icons Illustrating Classes Offered" />
     </div>
     <div class="flex flex-col gap-8">
       <div>
-        <h1 class="font-ostrich_med text-5xl text-center">
+        <h1 class="font-ostrich_med text-5xl lg:text-center sm:text-left">
           {Lessons.Title}
         </h1>
         <p class="text-sm">{Lessons.Desc}</p>
       </div>
-      <div class="flex lg:flex-row flex-col lg:gap-x-8">
+      <div class="flex lg:flex-row flex-col lg:items-stretch lg:justify-start items-center justify-center lg:gap-x-8 gap-y-8">
         {#each Lessons.Levels as Level}
           <ClassesCard
             card_points={Level.Details}
@@ -47,7 +47,8 @@
   </section>
   <section
     id="DogWalking"
-    class="flex flex-col lg:px-24 lg:py-16 bg-surface-50">
+    class="flex flex-col lg:px-24 lg:py-16 px-12 py-8 bg-surface-50
+    gap-y-12">
     <div class="flex flex-col gap-8">
       <div class="flex flex-col items-center">
         <h1 class="font-ostrich_med text-5xl text-center">
@@ -55,7 +56,7 @@
         </h1>
         <p class="text-sm">{Walks.Desc}</p>
       </div>
-      <div class="flex lg:flex-row flex-col lg:gap-x-8">
+      <div class="grid lg:grid-cols-3 md:grid-cols-1 lg:gap-8 gap-y-8">
         {#each Walks.Levels as Level}
           <ClassesCard
             card_points={Level.Details}
@@ -76,7 +77,7 @@
   </section>
   <section
     id="GroupTraining"
-    class="flex flex-col lg:px-24 lg:py-16 bg-white gap-y-12">
+    class="flex flex-col lg:px-24 lg:py-16 px-12 py-8 bg-white gap-y-12">
     <div class="flex flex-col gap-8">
       <div>
         <h1 class="font-ostrich_med text-5xl text-center">
@@ -84,7 +85,7 @@
         </h1>
         <p class="text-sm">{Classes.Desc}</p>
       </div>
-      <div class="grid lg:grid-cols-3 md:grid-cols-1 lg:gap-8">
+      <div class="grid lg:grid-cols-3 md:grid-cols-1 lg:gap-8 gap-y-8">
         {#each Classes.Levels as Level}
           <ClassesCard
             width="w-full"

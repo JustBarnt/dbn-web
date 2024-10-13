@@ -109,14 +109,10 @@
 }
 
 @font-face {
-  font-family: "Neonoir W01 Bold";
-  src: url("https://db.onlinewebfonts.com/t/6b9c1e37571068a60da4af717918a836.eot");
+  font-family: "NeonoirBold";
   src:
-    url("https://db.onlinewebfonts.com/t/6b9c1e37571068a60da4af717918a836.eot?#iefix") format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/6b9c1e37571068a60da4af717918a836.woff2") format("woff2"),
-    url("https://db.onlinewebfonts.com/t/6b9c1e37571068a60da4af717918a836.woff") format("woff"),
-    url("https://db.onlinewebfonts.com/t/6b9c1e37571068a60da4af717918a836.ttf") format("truetype"),
-    url("https://db.onlinewebfonts.com/t/6b9c1e37571068a60da4af717918a836.svg#Neonoir W01 Bold") format("svg");
+    url("/assets/fonts/Neonoir/neonoir-font.woff2") format("woff2"),
+    url("/assets/fonts/Neonoir/neonoir-font.woff") format("woff");
 }
 
 @font-face {

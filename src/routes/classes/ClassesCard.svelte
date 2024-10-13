@@ -2,7 +2,7 @@
   import PawBP from "/assets/our-classes/OurClasses_PawprintBulletPoint.png";
 
   /** @type string */
-  export let width = "w-1/3";
+  export let width = "w-full";
   /** @type string */
   export let card_title;
   /** @type string */

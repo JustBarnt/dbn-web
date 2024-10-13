@@ -10,7 +10,7 @@ export default {
       fontFamily: {
         ostrich_black: ["ostrich_sansblack", "sans-serif"],
         ostrich_med: ["ostrich_sansmedium", "sans-serif"],
-        neonoir: ["Neonoir\\ W01\\ Bold", "sans-serif"]
+        neonoir: ["NeonoirBold", "sans-serif"]
       }
     }
   },
