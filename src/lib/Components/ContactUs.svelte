@@ -10,7 +10,7 @@
   <div
     class="space-y-4"
     data-name="hero-el">
-    <h2 class="font-ostrich_med text-6xl text-center">
+    <h2 class="font-ostrich_med text-5xl text-center">
       READY TO GET STARTED OR HAVE QUESTIONS?
       <br />
       CONTACT US TO SCHEDULE A CONSULTATION!
