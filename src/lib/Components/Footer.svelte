@@ -19,7 +19,7 @@
     {#each Footer_Items as item}
       <div class="flex flex-col gap-2 lg:bg-tertiary-500 lg:even:bg-tertiary-500 even:bg-tertiary-700 p-4">
         <h3 class="text-2xl font-neonoir tracking-wide text-white border-b-4 border-secondary-500 pb-2">{item.title}</h3>
-        <div class="grid grid-cols-3 lg:flex lg:flex-col">
+        <div class="lg:grid lg:grid-cols-3 flex flex-col">
           <ul class="footer-list">
             {#each item.items as i}
               {#if i.link !== ""}

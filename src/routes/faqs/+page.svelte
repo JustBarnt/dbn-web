@@ -6,7 +6,7 @@
 <main
   id="FAQ-Page"
   class="flex flex-col content w-full">
-  <section class="w-full flex flex-col lg:px-16 lg:py-8 justify-center items-center gap-y-8">
+  <section class="w-full flex flex-col lg:px-16 lg:py-8 px-8 py-8 justify-center items-center gap-y-8">
     {#each faqs as faq}
       {@const [Summary, Question] = faq}
       <details class="w-full">
