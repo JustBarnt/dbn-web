@@ -3,7 +3,7 @@
   export let width = "56";
 </script>
 
-<a class="group hover:[&>svg>path]:fill-tertiary-500" href="https://www.instagram.com/dogsbynature?igsh=MWduMDBsc25mbzZ1ag==">
+<a class="group hover:[&>svg>path]:fill-tertiary-500" href="https://www.instagram.com/dogsbynature_training">
   <div class="bg-primary-500 w-9 h-9 px-1.5 py-1 rounded-3xl hover:bg-tertiary-500">
     <svg xmlns="http://www.w3.org/2000/svg" {width} viewBox="0 0 512 512"
       ><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path
