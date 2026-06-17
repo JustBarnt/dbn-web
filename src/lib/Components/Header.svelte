@@ -71,6 +71,6 @@
     <a
       class="lg:mr-4 btn-lg min-w-fit rounded-[999px] bg-primary-500 hover:bg-tertiary-500 text-on-primary-token font-neonoir"
       href="#contact-us-form">Contact Us</a>
-    <p class="font-ostrich_black text-secondary-500 text-2xl whitespace-nowrap">937-272-7697</p>
+    <a class="font-ostrich_black text-secondary-500 text-2xl whitespace-nowrap" href="tel:937-272-7697">937-272-7697</a>
   </div>
 </header>
